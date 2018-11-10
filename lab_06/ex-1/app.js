@@ -16,7 +16,11 @@ app.get('/toronto+team', function(req, res){
     res.send('<html><head></head><body><h1>Go Toronto!</h></body></html>')
 })
 
-app.get('/toronto?team', function(req, res){
+app.get('/toronto', function(req, res){
+    res.send('<html><head></head><body><h1>Go Toronto!</h></body></html>')
+})
+
+app.get('/toronto*team', function(req, res){
     res.send('<html><head></head><body><h1>Go Toronto!</h></body></html>')
 })
 
